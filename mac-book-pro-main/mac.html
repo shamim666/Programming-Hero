@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <main>
+
+        <section>
+
+            <div class="grid grid-flow-col grid-cols-2  gap-4">
+                <div>
+                    <img src="./images/mac.png" alt="">
+                </div>
+                <div>
+                    <div class="mt-8">
+                        <h3 class="mb-4">Memory </h3>
+                        <button id="mem0"class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            8Gb unified Memory
+                        </button>
+                        <button id="mem1"class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            16Gb unified Memory
+                        </button>
+
+
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="mb-4">Storage </h3>
+                        <button id="sto0"class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            256 SSD Storage
+                        </button>
+                        <button id="sto1"class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            512 SSD Storage
+                        </button>
+                        <button id="sto2"class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            1TB SSD Storage
+                        </button>
+
+
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="mb-4">Choose Your delivery option </h3>
+                        <button id="del0"class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            Free Delivery
+                        </button>
+                        <button id="del1"class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            Delivery Charge $20
+                        </button>
+
+
+                    </div>
+
+                    <div class="grid grid-flow-col grid-cols-2 mt-16 mb-4">
+                        <div>
+                            <h3 class="mb-2">Best Price</h3>
+                            <h3 class="mb-2">Extra Memory Cost</h3>
+                            <h3 class="mb-2">Best Storage Price</h3>
+                            <h3 class="mb-2">Delivery Charge</h3>
+                            <h3 class="mb-2">-----------------------------</h3>
+                            <h3 class="mb-2">Total Price</h3>
+
+                        </div>
+                        <div>
+                            <h3 class="mb-2">$<span id="bestdis">1299</span></h3>
+                            <h3 class="mb-2">$<span id="memdis">0</span></h3>
+                            <h3 class="mb-2">$<span id="stodis">0</span></h3>
+                            <h3 class="mb-2">$<span id="deldis">0</span></h3>
+                            <h3 class="mb-2">------------------</h3>
+                            <h3 class="mb-2">$<span id="totaldis">1299</span></h3>
+                        </div>
+
+                    </div>
+
+                    <h2 class="mt-8 mb-2">Add Promo Code</h2>
+                    <div class="grid grid-flow-col grid-cols-2 mt-16 mb-4">
+                        <div><input id="input" class=" ml-16 px-2 py-2 border-2 border-red-500" type="text"></div>
+                        <div><button id="apply"
+                                class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-2 rounded">Apply</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <h1 class="mt-16 text-5xl text-center">Total $ <span id="grandtotal">1299</span> </h1>
+        </section>
+    </main>
+
+
+
+
+
+    <script src="mac.js"></script>
+</body>
+
+</html>
